@@ -1,0 +1,9 @@
+int[N] filter(int N, int[N] in, ref int outsz){
+  outsz = 0;
+  int[N] out;
+  for(int i = 0; i < N; i++){
+    if(in[i] % 2 == 0){
+      out[outsz++] = in[i];
+    }
+  }
+}
