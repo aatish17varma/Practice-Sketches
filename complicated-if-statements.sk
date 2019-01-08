@@ -1,0 +1,20 @@
+
+int returnsOne(){
+    return 1;
+}
+
+int complicatedIfs() implements returnsOne{
+if(??){
+    if(??){
+        if(??){
+            if(??){
+                return 1;
+            }
+        }
+    }
+    else{
+
+    }
+
+}  
+}
