@@ -1,27 +1,30 @@
-list append(){
-  
+
+struct Node{
+  int data;
+  Node next;
 }
 
-list reverseLinkedList(bit[N] elements){
-  if(){
-  
-  }
-  else{
-    
-  }
+  Node reverse(Node node) { 
+        Node prev = null; 
+        Node current = node; 
+        Node next = null; 
+        while (current != null) { 
+            next = current.next; 
+            current.next = prev; 
+            prev = current; 
+            current = next; 
+        } 
+        node = prev; 
+        return node; 
+  } 
 
+list reverseLinkedListEfficient(Node node){
+#define LOC {| (node)(.next)? | null |}
+#define LOC2 {| LOC | tmp |}
+#define LHS {| (node | nl).(head)(.next)? | nl.tail | tmp |}
+#define COMP {| LOC ( == | != ) LOC |}
 }
 
-list reverseLinkedListEfficient(bit[N] elements){
-
-}
-
-
-void main(bit[N] elements){
-  list l1 = new list();
-  list l2 = new list();
-
-}
 
 
 
