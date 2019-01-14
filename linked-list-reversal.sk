@@ -1,28 +1,43 @@
 
+#define LOC {| (node)(.next)? | null | current(.next)? | prev(.next)? |}
+#define condition {| current (== | !=) (null)|}
+
 struct Node{
   int data;
   Node next;
 }
 
-  Node reverse(Node node) { 
-        Node prev = null; 
-        Node current = node; 
-        Node next = null; 
-        while (current != null) { 
-            next = current.next; 
-            current.next = prev; 
-            prev = current; 
-            current = next; 
-        } 
-        node = prev; 
-        return node; 
+Node reverse(Node node) { 
+  Node prev = null; 
+  Node current = node; 
+  Node next = null; 
+  while (current != null) { 
+      next = current.next; 
+      current.next = prev; 
+      prev = current; 
+      current = next; 
+  } 
+  node = prev; 
+  return node; 
   } 
 
-list reverseLinkedListEfficient(Node node){
-#define LOC {| (node)(.next)? | null |}
-#define LOC2 {| LOC | tmp |}
-#define LHS {| (node | nl).(head)(.next)? | nl.tail | tmp |}
-#define COMP {| LOC ( == | != ) LOC |}
+
+Node reverseLinkedListEfficient(Node node) implements reverse{
+
+  Node prev = LOC;
+  Node current = LOC;
+  Node next = LOC;
+
+  while (condition){
+    next = LOC;
+    current.next = LOC;
+    prev = LOC;
+    current = next;
+  }
+
+  node = prev;
+  return node;
+
 }
 
 
