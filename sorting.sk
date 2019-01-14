@@ -14,10 +14,10 @@ int[5] bubbleSort(int[5] ar){
 
 
 int[5] selectionSort(int[5] ar) implements bubbleSort{
-   for (int i =0; i < 4; i++)
+   for (int i =0; i < ??; i++)
    {
       int min = i;
-      for (int j = i+1; j < 5; j++){
+      for (int j = i+??; j < 5; j++){
             if (ar[j] < ar[min]){
                 min = j;    
             }
