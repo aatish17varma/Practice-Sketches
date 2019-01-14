@@ -1,0 +1,8 @@
+harness void main(int x, int y){
+  assert(legen(x,y) == 2*x + 3);
+  assert(legen(x,y) == 3*x + 2*y);
+}
+
+generator int legen(int i, int j){
+  return ??*i + ??*j + ??;
+}

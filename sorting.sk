@@ -27,7 +27,7 @@ int[5] selectionSort(int[5] ar) implements bubbleSort{
       ar[i] = temp;
     }
 
-    return ar; 
+    return ar;
 }
 
 
@@ -35,9 +35,9 @@ int[5] insertionSort(int[5] ar) implements bubbleSort{
    for(int i = 1; i < ??; i++){
       int index = ar[i]; 
       int j = ??;
-      while(j > 0 && (ar[j-1] > index)){
+      while(j > 0 && (ar[j-??] > index)){
            ar[j] = ar[??];
-           j--;
+           j = j - ??;
       }
       ar[j] = index;
     } 
